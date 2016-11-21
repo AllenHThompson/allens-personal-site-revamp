@@ -1,0 +1,106 @@
+<!-- Contact Section -->
+<section id="contact" class="container text-center">
+     <div class="caret caret-taupe"></div>
+     <div class="content-section">
+          <div class="row">
+               <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Contact Me</h2>
+                    <p>Please feel free to reach out with any further inquiries!</p>
+                    <p>
+                         <a href="javascript:window.location.href = 'mailto:' + allenhthompson1@gmail.com">
+                              <i class="fa fa-envelope"></i>  allenhthompson1@gmail.com
+                         </a>
+                    </p>
+               </div>
+          </div>
+          <form id="contact-form" method="post" onsubmit="return validateForm();" action="mail.php" data-toggle="validator" role="form">
+               <div class="controls col-md-8 col-md-offset-2">
+                    <div class="row">
+                         <div style="display:none;">
+                              <input type="text" name="noThanks" id="noThanks" />
+                         </div>
+                         <div class="col-md-6">
+                              <div class="form-group has-feedback">
+                                   <label for="form_name">Full Name *</label>
+                                   <div class="input-group">
+                                        <span class="input-group-addon">
+                                             <i class="fa fa-user-secret" aria-hidden="true"></i>
+                                        </span>
+                                        <input type="text" name="fullName" class="form-control" placeholder="Please enter your Full Name" required data-required-error="WHAT'S YOUR NAME?">
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                   </div>
+                                   <div class="help-block with-errors"></div>
+                              </div>
+                         </div>
+                         <div class="col-md-6">
+                              <div class="form-group has-feedback">
+                                   <label for="form_lastname">Company</label>
+                                   <div class="input-group">
+                                        <span class="input-group-addon">
+                                             <i class="fa fa-university" aria-hidden="true"></i>
+                                        </span>
+                                        <input type="text" name="company" class="form-control" data-required-error="WHAT'S YOUR COMPANY NAME" placeholder="Please Include">
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                   </div>
+                                   <div class="help-block with-errors"></div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="col-md-6">
+                              <div class="form-group has-feedback">
+                                   <label for="form_email">Email *</label>
+                                   <div class="input-group">
+                                        <span class="input-group-addon">
+                                             <i class="fa fa-desktop" aria-hidden="true"></i>
+                                        </span>
+                                        <input type="email" name="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Please enter your email" required data-required-error="I'll need a valid email to reach you!">
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                   </div>
+                                   <div class="help-block with-errors"></div>
+                              </div>
+                         </div>
+                         <div class="col-md-6">
+                              <div class="form-group has-feedback">
+                                   <label for="form_phone">Phone</label>
+                                   <div class="input-group">
+                                        <span class="input-group-addon">
+                                             <i class="fa fa-phone" aria-hidden="true"></i>
+                                        </span>
+                                        <input type="tel" name="phone" class="form-control" data-required-error="This doesn't appear to be a valid number" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" placeholder="Include for faster response...">
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                   </div>
+                                   <div class="help-block with-errors"></div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="col-md-12">
+                              <div class="form-group has-feedback">
+                                   <label for="form_message">Message *</label>
+                                   <div class="input-group">
+                                        <span class="input-group-addon">
+                                             <i class="fa fa-commenting" aria-hidden="true"></i>
+                                        </span>
+                                        <textarea name="message" data-minlength="80" class="form-control" placeholder="Ask me anything!" rows="4" required data-required-error="Don't forget to include a message! (Minimum 80 Characters)"></textarea>
+                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                   </div>
+                                   <div class="help-block with-errors"></div>
+                              </div>
+                         </div>
+                         <div class="col-md-12">
+                              <input type="submit" class="btn btn-primary btn-send" value="Send message">
+
+                         </div>
+                         <div class="row">
+                              <div class="col-md-12">
+                                   <p class="text-muted">
+                                        <strong>*</strong> These fields are required.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </form>
+     </div>
+</section>
